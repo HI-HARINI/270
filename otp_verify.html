@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Login page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+</head>
+<body >
+
+<!-- Start code from below -->
+	<h1> OTP VERIFICATION </h1>
+	<form action="/login" method="POST"><br>
+		<label>MOBILE NO.</label>
+		<input type="tel" placeholder="Mobile Number" name="number"></input><br><br>
+		<label>ENTER OTP</label>
+		<input type="text" placeholder="Enter OTP" name="recieved_otp"></input><br><br>
+		<input type="Submit"></input>
+	</form>
+</body>
+</html>
